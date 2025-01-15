@@ -9,5 +9,4 @@ faiss-cpu
 altair
 tiktoken
 huggingface-hub
-vanderSentiment
-difflib
+vaderSentiment
