@@ -10,3 +10,4 @@ altair
 tiktoken
 huggingface-hub
 vaderSentiment
+openai
