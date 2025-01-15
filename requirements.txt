@@ -11,3 +11,5 @@ tiktoken
 huggingface-hub
 vaderSentiment
 openai
+python-dotenv
+google-generativeai
