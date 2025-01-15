@@ -1,0 +1,2028 @@
+{
+  "medicines": [
+    {
+      "name": "Acetaminophen",
+      "drug_class": "Analgesic/Antipyretic",
+      "brand_names": ["Tylenol", "Panadol"],
+      "composition": {
+        "active_ingredient": "Acetaminophen/Paracetamol",
+        "strength": ["325mg", "500mg", "650mg"]
+      },
+      "uses": ["Pain relief"],
+      "contraindications": ["Severe liver disease"],
+      "side_effects": ["Liver damage (high doses)", "Nausea"]
+    },
+    {
+      "name": "Paracetamol",
+      "drug_class": "Analgesic",
+      "uses": ["Fever reduction", "Pain relief"],
+      "side_effects": ["Nausea", "Liver damage (in high doses)"]
+    },
+    {
+      "name": "Cough Syrup",
+      "uses": ["cough", "sore throat"],
+      "side_effects": ["drowsiness", "nausea"]
+  },
+    {
+      "name": "Aspirin",
+      "drug_class": "NSAID",
+      "uses": ["Pain relief", "Anti-inflammatory", "Fever reduction", "Prevention of heart attacks"],
+      "side_effects": ["Gastrointestinal bleeding", "Nausea", "Allergic reactions"],
+      "contraindications": ["Active bleeding disorders", "Asthma (in some cases)"]
+  },
+  
+    {
+      "name": "Amoxicillin",
+      "drug_class": "Penicillin Antibiotic",
+      "brand_names": ["Amoxil"],
+      "composition": {
+        "active_ingredient": "Amoxicillin trihydrate",
+        "strength": ["250mg", "500mg"]
+      },
+      "uses": ["Bacterial infections"],
+      "contraindications": ["Penicillin allergy"],
+      "side_effects": ["Diarrhea", "Rash"]
+    },
+    {
+      "name": "Lisinopril",
+      "drug_class": "ACE Inhibitor",
+      "brand_names": ["Zestril", "Prinivil"],
+      "composition": {
+        "active_ingredient": "Lisinopril",
+        "strength": ["5mg", "10mg", "20mg", "40mg"]
+      },
+      "uses": ["Hypertension", "Heart failure"],
+      "contraindications": ["Pregnancy", "Angioedema history"],
+      "side_effects": ["Dry cough", "Dizziness"]
+    },
+    {
+      "name": "Metformin",
+      "drug_class": "Biguanide",
+      "brand_names": ["Glucophage"],
+      "composition": {
+        "active_ingredient": "Metformin hydrochloride",
+        "strength": ["500mg", "850mg", "1000mg"]
+      },
+      "uses": ["Type 2 diabetes"],
+      "contraindications": ["Kidney disease"],
+      "side_effects": ["Diarrhea", "Nausea"]
+    },
+    {
+      "name": "Domperidone",
+      "drug_class": "Anti-emetic",
+      "brand_names": ["Motilium"],
+      "composition": {
+        "active_ingredient": "Domperidone",
+        "strength": ["10mg", "20mg"]
+      },
+      "uses": ["Vomiting", "Nausea"]
+    },
+    {
+      "name": "Ondansetron",
+      "drug_class": "Serotonin 5-HT3 receptor antagonist",
+      "brand_names": ["Zofran"],
+      "composition": {
+        "active_ingredient": "Ondansetron",
+        "strength": ["4mg", "8mg"]
+      },
+      "uses": ["Vomiting", "Nausea", "Motion sickness"]
+    },
+    {
+      "name": "Omeprazole",
+      "drug_class": "Proton Pump Inhibitor",
+      "brand_names": ["Prilosec"],
+      "composition": {
+        "active_ingredient": "Omeprazole",
+        "strength": ["10mg", "20mg", "40mg"]
+      },
+      "uses": ["Acid reflux", "Ulcers"],
+      "contraindications": ["Hypersensitivity"],
+      "side_effects": ["Headache", "Diarrhea"]
+    },
+    {
+      "name": "Sertraline",
+      "drug_class": "SSRI",
+      "brand_names": ["Zoloft"],
+      "composition": {
+        "active_ingredient": "Sertraline hydrochloride",
+        "strength": ["25mg", "50mg", "100mg"]
+      },
+      "uses": ["Depression", "Anxiety"],
+      "contraindications": ["MAO inhibitors"],
+      "side_effects": ["Nausea", "Insomnia"]
+    },
+    {
+      "name": "Amlodipine",
+      "drug_class": "Calcium Channel Blocker",
+      "brand_names": ["Norvasc"],
+      "composition": {
+        "active_ingredient": "Amlodipine besylate",
+        "strength": ["2.5mg", "5mg", "10mg"]
+      },
+      "uses": ["Hypertension", "Angina"],
+      "contraindications": ["Severe hypotension"],
+      "side_effects": ["Edema", "Dizziness"]
+    },
+    {
+      "name": "Levothyroxine",
+      "drug_class": "Thyroid Hormone",
+      "brand_names": ["Synthroid", "Levoxyl"],
+      "composition": {
+        "active_ingredient": "Levothyroxine sodium",
+        "strength": ["25mcg", "50mcg", "75mcg", "100mcg"]
+      },
+      "uses": ["Hypothyroidism"],
+      "contraindications": ["Thyrotoxicosis"],
+      "side_effects": ["Palpitations", "Anxiety"]
+    },
+    {
+      "name": "Fluticasone",
+      "drug_class": "Corticosteroid",
+      "brand_names": ["Flonase"],
+      "composition": {
+        "active_ingredient": "Fluticasone propionate",
+        "strength": ["50mcg/spray"]
+      },
+      "uses": ["Allergic rhinitis"],
+      "contraindications": ["Active infections"],
+      "side_effects": ["Nosebleeds", "Headache"]
+    },
+    {
+      "name": "Metoprolol",
+      "drug_class": "Beta Blocker",
+      "brand_names": ["Lopressor", "Toprol-XL"],
+      "composition": {
+        "active_ingredient": "Metoprolol succinate/tartrate",
+        "strength": ["25mg", "50mg", "100mg"]
+      },
+      "uses": ["Hypertension", "Heart failure"],
+      "contraindications": ["Heart block"],
+      "side_effects": ["Fatigue", "Dizziness"]
+    },
+    {
+      "name": "Amoxicillin",
+      "drug_class": "Penicillin Antibiotic",
+      "brand_names": ["Amoxil", "Trimox"],
+      "composition": {
+        "active_ingredient": "Amoxicillin trihydrate",
+        "strength": ["250mg", "500mg", "875mg"]
+      },
+      "uses": [
+        "Respiratory tract infections",
+        "Ear infections",
+        "Urinary tract infections",
+        "Skin infections",
+        "Dental infections"
+      ],
+      "side_effects": [
+        "Diarrhea",
+        "Rash",
+        "Nausea",
+        "Vomiting",
+        "Candidiasis"
+      ],
+      "contraindications": ["Penicillin allergy", "Mononucleosis"]
+    },
+    {
+      "name": "Azithromycin",
+      "drug_class": "Macrolide Antibiotic",
+      "brand_names": ["Zithromax", "Z-pak"],
+      "composition": {
+        "active_ingredient": "Azithromycin dihydrate",
+        "strength": ["250mg", "500mg"]
+      },
+      "uses": [
+        "Respiratory infections",
+        "Skin infections",
+        "STDs",
+        "Ear infections",
+        "Bronchitis"
+      ],
+      "side_effects": [
+        "Diarrhea",
+        "Nausea",
+        "Abdominal pain",
+        "QT prolongation"
+      ],
+      "contraindications": ["Liver disease", "Heart rhythm disorders"]
+    },
+    {
+      "name": "Ciprofloxacin",
+      "drug_class": "Fluoroquinolone Antibiotic",
+      "brand_names": ["Cipro"],
+      "composition": {
+        "active_ingredient": "Ciprofloxacin hydrochloride",
+        "strength": ["250mg", "500mg", "750mg"]
+      },
+      "uses": [
+        "Urinary tract infections",
+        "Respiratory infections",
+        "Skin infections",
+        "Bone infections",
+        "Typhoid fever"
+      ],
+      "side_effects": [
+        "Tendon damage",
+        "Nausea",
+        "Diarrhea",
+        "Headache",
+        "CNS effects"
+      ],
+      "contraindications": ["Pregnancy", "Children", "Myasthenia gravis"]
+    },
+    {
+      "name": "Doxycycline",
+      "drug_class": "Tetracycline Antibiotic",
+      "brand_names": ["Vibramycin", "Monodox"],
+      "composition": {
+        "active_ingredient": "Doxycycline hyclate",
+        "strength": ["50mg", "100mg"]
+      },
+      "uses": [
+        "Acne",
+        "Respiratory infections",
+        "Lyme disease",
+        "Malaria prevention",
+        "Skin infections"
+      ],
+      "side_effects": [
+        "Photosensitivity",
+        "Esophageal irritation",
+        "Nausea",
+        "Dental staining"
+      ],
+      "contraindications": ["Pregnancy", "Children under 8"]
+    },
+    {
+      "name": "Cephalexin",
+      "drug_class": "Cephalosporin Antibiotic",
+      "brand_names": ["Keflex"],
+      "composition": {
+        "active_ingredient": "Cephalexin monohydrate",
+        "strength": ["250mg", "500mg"]
+      },
+      "uses": [
+        "Respiratory infections",
+        "Skin infections",
+        "Urinary tract infections",
+        "Bone infections"
+      ],
+      "side_effects": [
+        "Diarrhea",
+        "Nausea",
+        "Rash",
+        "Candidiasis"
+      ],
+      "contraindications": ["Cephalosporin allergy"]
+    },
+    {
+      "name": "Clarithromycin",
+      "drug_class": "Macrolide Antibiotic",
+      "brand_names": ["Biaxin"],
+      "composition": {
+        "active_ingredient": "Clarithromycin",
+        "strength": ["250mg", "500mg"]
+      },
+      "uses": [
+        "Respiratory infections",
+        "H. pylori infection",
+        "Skin infections",
+        "MAC prevention"
+      ],
+      "side_effects": [
+        "Taste disturbance",
+        "Nausea",
+        "Diarrhea",
+        "QT prolongation"
+      ],
+      "contraindications": ["Liver disease", "Heart rhythm disorders"]
+    },
+    {
+      "name": "Clindamycin",
+      "drug_class": "Lincosamide Antibiotic",
+      "brand_names": ["Cleocin"],
+      "composition": {
+        "active_ingredient": "Clindamycin hydrochloride",
+        "strength": ["150mg", "300mg"]
+      },
+      "uses": [
+        "Serious infections",
+        "Dental infections",
+        "Bone infections",
+        "Skin infections"
+      ],
+      "side_effects": [
+        "Severe diarrhea",
+        "C. difficile infection",
+        "Nausea",
+        "Rash"
+      ],
+      "contraindications": ["C. difficile history", "Regional enteritis"]
+    },
+    {
+      "name": "Sulfamethoxazole/Trimethoprim",
+      "drug_class": "Sulfonamide Antibiotic",
+      "brand_names": ["Bactrim", "Septra"],
+      "composition": {
+        "active_ingredient": "Sulfamethoxazole/Trimethoprim",
+        "strength": ["400mg/80mg", "800mg/160mg"]
+      },
+      "uses": [
+        "Urinary tract infections",
+        "Pneumocystis pneumonia",
+        "Ear infections",
+        "Traveler's diarrhea"
+      ],
+      "side_effects": [
+        "Rash",
+        "Sun sensitivity",
+        "Nausea",
+        "Blood disorders"
+      ],
+      "contraindications": ["Sulfa allergy", "Pregnancy", "Liver disease"]
+    },
+    {
+      "name": "Nitrofurantoin",
+      "drug_class": "Nitrofuran Antibiotic",
+      "brand_names": ["Macrobid", "Macrodantin"],
+      "composition": {
+        "active_ingredient": "Nitrofurantoin monohydrate",
+        "strength": ["50mg", "100mg"]
+      },
+      "uses": [
+        "Urinary tract infections",
+        "UTI prevention"
+      ],
+      "side_effects": [
+        "Nausea",
+        "Brown urine",
+        "Lung problems",
+        "Liver problems"
+      ],
+      "contraindications": ["Kidney disease", "G6PD deficiency"]
+    },
+    {
+      "name": "Metronidazole",
+      "drug_class": "Nitroimidazole Antibiotic",
+      "brand_names": ["Flagyl"],
+      "composition": {
+        "active_ingredient": "Metronidazole",
+        "strength": ["250mg", "500mg"]
+      },
+      "uses": [
+        "Anaerobic infections",
+        "Bacterial vaginosis",
+        "C. difficile infection",
+        "H. pylori infection"
+      ],
+      "side_effects": [
+        "Metallic taste",
+        "Nausea",
+        "Disulfiram-like reaction",
+        "Peripheral neuropathy"
+      ],
+      "contraindications": ["Alcohol use", "Pregnancy first trimester"]
+    },
+    {
+      "name": "Lisinopril",
+      "drug_class": "ACE Inhibitor",
+      "brand_names": ["Zestril", "Prinivil"],
+      "composition": {
+        "active_ingredient": "Lisinopril",
+        "strength": ["2.5mg", "5mg", "10mg", "20mg", "30mg", "40mg"]
+      },
+      "uses": [
+        "High blood pressure",
+        "Heart failure",
+        "Post heart attack recovery",
+        "Diabetic kidney disease"
+      ],
+      "dosage": {
+        "adult": {
+          "hypertension": "10-40 mg once daily",
+          "heart_failure": "2.5-40 mg once daily",
+          "post_heart_attack": "5 mg within 24 hours, 5 mg after 24 hours",
+          "maximum_daily": "40 mg"
+        },
+        "elderly": {
+          "initial": "2.5-5 mg once daily",
+          "notes": "Lower doses recommended due to reduced kidney function"
+        }
+      },
+      "contraindications": [
+        "History of angioedema",
+        "Pregnancy",
+        "Bilateral renal artery stenosis",
+        "Hyperkalemia"
+      ],
+      "side_effects": [
+        "Dry cough",
+        "Dizziness",
+        "High potassium levels",
+        "Fatigue",
+        "Headache"
+      ],
+      "warnings": [
+        "Monitor kidney function and potassium levels",
+        "Stop if pregnancy detected",
+        "Risk of severe allergic reactions",
+        "May cause birth defects if used during pregnancy"
+      ],
+      "monitoring_required": [
+        "Blood pressure",
+        "Kidney function",
+        "Potassium levels",
+        "Signs of angioedema"
+      ]
+    },
+    {
+      "name": "Metoprolol",
+      "drug_class": "Beta Blocker",
+      "brand_names": ["Lopressor", "Toprol-XL"],
+      "composition": {
+        "active_ingredient": "Metoprolol tartrate/succinate",
+        "strength": ["25mg", "50mg", "100mg", "200mg"]
+      },
+      "uses": [
+        "High blood pressure",
+        "Angina",
+        "Heart failure",
+        "Heart rhythm disorders",
+        "Post heart attack treatment"
+      ],
+      "dosage": {
+        "adult": {
+          "hypertension": "25-100 mg daily in single or divided doses",
+          "angina": "50-200 mg daily in divided doses",
+          "heart_failure": "Start at 25 mg daily, increase gradually",
+          "maximum_daily": "400 mg"
+        },
+        "elderly": {
+          "initial": "25 mg daily",
+          "notes": "Adjust based on response and tolerance"
+        }
+      },
+      "contraindications": [
+        "Severe heart block",
+        "Cardiogenic shock",
+        "Severe bradycardia",
+        "Severe peripheral arterial disease"
+      ],
+      "side_effects": [
+        "Fatigue",
+        "Dizziness",
+        "Bradycardia",
+        "Cold hands and feet",
+        "Depression",
+        "Sleep disturbances"
+      ],
+      "warnings": [
+        "Do not stop abruptly",
+        "May mask symptoms of hypoglycemia",
+        "May worsen asthma symptoms",
+        "Avoid in severe peripheral vascular disease"
+      ],
+      "monitoring_required": [
+        "Heart rate",
+        "Blood pressure",
+        "Signs of heart failure worsening",
+        "Depression symptoms"
+      ]
+    },
+    {
+      "name": "Amlodipine",
+      "drug_class": "Calcium Channel Blocker",
+      "brand_names": ["Norvasc"],
+      "composition": {
+        "active_ingredient": "Amlodipine besylate",
+        "strength": ["2.5mg", "5mg", "10mg"]
+      },
+      "uses": [
+        "High blood pressure",
+        "Coronary artery disease",
+        "Angina"
+      ],
+      "dosage": {
+        "adult": {
+          "hypertension": "5-10 mg once daily",
+          "angina": "5-10 mg once daily",
+          "maximum_daily": "10 mg"
+        },
+        "elderly": {
+          "initial": "2.5 mg daily",
+          "notes": "Lower initial dose recommended"
+        }
+      },
+      "contraindications": [
+        "Severe hypotension",
+        "Aortic stenosis",
+        "Unstable angina"
+      ],
+      "side_effects": [
+        "Peripheral edema",
+        "Dizziness",
+        "Flushing",
+        "Headache",
+        "Fatigue",
+        "Palpitations"
+      ],
+      "warnings": [
+        "May worsen angina when starting/increasing dose",
+        "Monitor for peripheral edema",
+        "Use caution in liver disease"
+      ],
+      "monitoring_required": [
+        "Blood pressure",
+        "Heart rate",
+        "Signs of edema",
+        "Liver function"
+      ]
+    },
+    {
+      "name": "Warfarin",
+      "drug_class": "Anticoagulant",
+      "brand_names": ["Coumadin", "Jantoven"],
+      "composition": {
+        "active_ingredient": "Warfarin sodium",
+        "strength": ["1mg", "2mg", "2.5mg", "3mg", "4mg", "5mg", "6mg", "7.5mg", "10mg"]
+      },
+      "uses": [
+        "Prevention of blood clots",
+        "Treatment of deep vein thrombosis",
+        "Prevention of stroke in atrial fibrillation",
+        "Prevention of heart valve thrombosis"
+      ],
+      "dosage": {
+        "adult": {
+          "initial": "2-5 mg once daily",
+          "maintenance": "Based on INR results",
+          "notes": "Dose adjusted based on INR monitoring"
+        },
+        "elderly": {
+          "initial": "2-3 mg once daily",
+          "notes": "More sensitive to warfarin effects"
+        }
+      },
+      "contraindications": [
+        "Active major bleeding",
+        "Severe thrombocytopenia",
+        "Recent brain, eye, or spinal cord surgery",
+        "Pregnancy (first and third trimester)"
+      ],
+      "side_effects": [
+        "Bleeding",
+        "Bruising",
+        "Purple toe syndrome",
+        "Skin necrosis (rare)",
+        "Hair loss"
+      ],
+      "warnings": [
+        "Regular INR monitoring required",
+        "Many drug and food interactions",
+        "High risk of bleeding",
+        "Avoid activities with high risk of injury"
+      ],
+      "monitoring_required": [
+        "INR levels",
+        "Signs of bleeding",
+        "Complete blood count",
+        "Liver function"
+      ]
+    },
+    {
+      "name": "Furosemide",
+      "drug_class": "Loop Diuretic",
+      "brand_names": ["Lasix"],
+      "composition": {
+        "active_ingredient": "Furosemide",
+        "strength": ["20mg", "40mg", "80mg", "100mg"]
+      },
+      "uses": [
+        "Heart failure",
+        "High blood pressure",
+        "Edema",
+        "Liver cirrhosis",
+        "Kidney disease"
+      ],
+      "dosage": {
+        "adult": {
+          "edema": "20-80 mg once daily",
+          "hypertension": "40 mg twice daily",
+          "maximum_daily": "600 mg",
+          "notes": "Take in morning to avoid nighttime urination"
+        },
+        "elderly": {
+          "initial": "20 mg once daily",
+          "notes": "Monitor fluid and electrolyte status closely"
+        }
+      },
+      "contraindications": [
+        "Anuria",
+        "Severe electrolyte depletion",
+        "Severe dehydration"
+      ],
+      "side_effects": [
+        "Dehydration",
+        "Electrolyte imbalance",
+        "Low blood pressure",
+        "Increased urination",
+        "Hearing problems (with high doses)",
+        "Gout"
+      ],
+      "warnings": [
+        "Monitor electrolytes regularly",
+        "Risk of dehydration",
+        "May increase blood sugar",
+        "Can cause photosensitivity"
+      ],
+      "monitoring_required": [
+        "Electrolyte levels",
+        "Kidney function",
+        "Blood pressure",
+        "Signs of dehydration"
+      ]
+    },
+    {
+      "name": "Gabapentin",
+      "drug_class": "Anticonvulsant/Analgesic",
+      "brand_names": ["Neurontin", "Gralise"],
+      "composition": {
+        "active_ingredient": "Gabapentin",
+        "strength": ["100mg", "300mg", "400mg", "600mg", "800mg"]
+      },
+      "uses": [
+        "Neuropathic pain",
+        "Epilepsy",
+        "Post-herpetic neuralgia",
+        "Diabetic neuropathy"
+      ],
+      "side_effects": [
+        "Dizziness",
+        "Drowsiness",
+        "Weight gain",
+        "Peripheral edema"
+      ],
+      "contraindications": ["Severe renal impairment"]
+    },
+    {
+      "name": "Pregabalin",
+      "drug_class": "Anticonvulsant/Analgesic",
+      "brand_names": ["Lyrica"],
+      "composition": {
+        "active_ingredient": "Pregabalin",
+        "strength": ["25mg", "50mg", "75mg", "100mg", "150mg", "200mg", "300mg"]
+      },
+      "uses": [
+        "Fibromyalgia",
+        "Neuropathic pain",
+        "Epilepsy",
+        "Anxiety"
+      ],
+      "side_effects": [
+        "Dizziness",
+        "Somnolence",
+        "Weight gain",
+        "Blurred vision"
+      ],
+      "contraindications": ["Hypersensitivity"]
+    },
+    {
+      "name": "Duloxetine",
+      "drug_class": "SNRI",
+      "brand_names": ["Cymbalta"],
+      "composition": {
+        "active_ingredient": "Duloxetine hydrochloride",
+        "strength": ["20mg", "30mg", "60mg"]
+      },
+      "uses": [
+        "Depression",
+        "Anxiety",
+        "Fibromyalgia",
+        "Chronic pain",
+        "Diabetic neuropathy"
+      ],
+      "side_effects": [
+        "Nausea",
+        "Dry mouth",
+        "Fatigue",
+        "Insomnia"
+      ],
+      "contraindications": ["MAO inhibitors", "Glaucoma"]
+    },
+    {
+      "name": "Sumatriptan",
+      "drug_class": "Triptan",
+      "brand_names": ["Imitrex"],
+      "composition": {
+        "active_ingredient": "Sumatriptan succinate",
+        "strength": ["25mg", "50mg", "100mg"]
+      },
+      "uses": [
+        "Migraine headaches",
+        "Cluster headaches"
+      ],
+      "side_effects": [
+        "Chest tightness",
+        "Paresthesia",
+        "Dizziness",
+        "Fatigue"
+      ],
+      "contraindications": ["Cardiovascular disease", "Uncontrolled hypertension"]
+    },
+    {
+      "name": "Topiramate",
+      "drug_class": "Anticonvulsant",
+      "brand_names": ["Topamax"],
+      "composition": {
+        "active_ingredient": "Topiramate",
+        "strength": ["25mg", "50mg", "100mg", "200mg"]
+      },
+      "uses": [
+        "Epilepsy",
+        "Migraine prevention",
+        "Bipolar disorder"
+      ],
+      "side_effects": [
+        "Cognitive slowing",
+        "Paresthesia",
+        "Weight loss",
+        "Vision changes"
+      ],
+      "contraindications": ["Kidney stones", "Metabolic acidosis"]
+    },
+    {
+      "name": "Tramadol",
+      "drug_class": "Opioid Analgesic",
+      "brand_names": ["Ultram"],
+      "composition": {
+        "active_ingredient": "Tramadol hydrochloride",
+        "strength": ["50mg", "100mg"]
+      },
+      "uses": [
+        "Moderate to severe pain",
+        "Chronic pain"
+      ],
+      "side_effects": [
+        "Dizziness",
+        "Nausea",
+        "Constipation",
+        "Seizures"
+      ],
+      "contraindications": ["Seizure disorders", "MAO inhibitors"]
+    },
+    {
+      "name": "Carbamazepine",
+      "drug_class": "Anticonvulsant",
+      "brand_names": ["Tegretol"],
+      "composition": {
+        "active_ingredient": "Carbamazepine",
+        "strength": ["100mg", "200mg", "400mg"]
+      },
+      "uses": [
+        "Epilepsy",
+        "Trigeminal neuralgia",
+        "Bipolar disorder"
+      ],
+      "side_effects": [
+        "Dizziness",
+        "Ataxia",
+        "Blood disorders",
+        "Skin reactions"
+      ],
+      "contraindications": ["Bone marrow depression", "MAO inhibitors"]
+    },
+    {
+      "name": "Rizatriptan",
+      "drug_class": "Triptan",
+      "brand_names": ["Maxalt"],
+      "composition": {
+        "active_ingredient": "Rizatriptan benzoate",
+        "strength": ["5mg", "10mg"]
+      },
+      "uses": [
+        "Migraine headaches"
+      ],
+      "side_effects": [
+        "Dizziness",
+        "Fatigue",
+        "Chest pressure",
+        "Nausea"
+      ],
+      "contraindications": ["Coronary artery disease", "Stroke history"]
+    },
+    {
+      "name": "Valproic Acid",
+      "drug_class": "Anticonvulsant",
+      "brand_names": ["Depakene", "Depakote"],
+      "composition": {
+        "active_ingredient": "Valproic acid",
+        "strength": ["250mg", "500mg"]
+      },
+      "uses": [
+        "Epilepsy",
+        "Bipolar disorder",
+        "Migraine prevention"
+      ],
+      "side_effects": [
+        "Liver dysfunction",
+        "Thrombocytopenia",
+        "Weight gain",
+        "Hair loss"
+      ],
+      "contraindications": ["Liver disease", "Pregnancy"]
+    },
+    {
+      "name": "Levetiracetam",
+      "drug_class": "Anticonvulsant",
+      "brand_names": ["Keppra"],
+      "composition": {
+        "active_ingredient": "Levetiracetam",
+        "strength": ["250mg", "500mg", "750mg", "1000mg"]
+      },
+      "uses": [
+        "Epilepsy",
+        "Seizure disorders"
+      ],
+      "side_effects": [
+        "Behavioral changes",
+        "Fatigue",
+        "Dizziness",
+        "Depression"
+      ],
+      "contraindications": ["Severe renal impairment"]
+    },
+    {
+      "name": "Ibuprofen",
+      "drug_class": "NSAID",
+      "brand_names": ["Advil", "Motrin", "Brufen"],
+      "composition": {
+        "active_ingredient": "Ibuprofen",
+        "strength": ["200mg", "400mg", "600mg", "800mg"]
+      },
+      "uses": [
+        "Pain relief",
+        "Fever reduction",
+        "Inflammation",
+        "Arthritis",
+        "Menstrual cramps"
+      ],
+      "side_effects": [
+        "Gastric ulcers",
+        "Heartburn",
+        "Dizziness",
+        "Hypertension",
+        "Kidney problems"
+      ],
+      "contraindications": [
+        "Peptic ulcer",
+        "Severe heart failure",
+        "Third trimester pregnancy",
+        "Aspirin-sensitive asthma"
+      ]
+    },
+    {
+      "name": "Naproxen",
+      "drug_class": "NSAID",
+      "brand_names": ["Aleve", "Naprosyn"],
+      "composition": {
+        "active_ingredient": "Naproxen sodium",
+        "strength": ["220mg", "275mg", "375mg", "500mg"]
+      },
+      "uses": [
+        "Arthritis",
+        "Ankylosing spondylitis",
+        "Acute gout",
+        "Menstrual pain",
+        "General pain"
+      ],
+      "side_effects": [
+        "Stomach bleeding",
+        "Headache",
+        "Drowsiness",
+        "Fluid retention",
+        "Hypertension"
+      ],
+      "contraindications": [
+        "Active bleeding",
+        "Heart bypass surgery",
+        "Late pregnancy"
+      ]
+    },
+    {
+      "name": "Diclofenac",
+      "drug_class": "NSAID",
+      "brand_names": ["Voltaren", "Cataflam"],
+      "composition": {
+        "active_ingredient": "Diclofenac sodium/potassium",
+        "strength": ["25mg", "50mg", "75mg", "100mg"]
+      },
+      "uses": [
+        "Rheumatoid arthritis",
+        "Osteoarthritis",
+        "Ankylosing spondylitis",
+        "Acute muscle pain",
+        "Migraine"
+      ],
+      "side_effects": [
+        "GI bleeding",
+        "Liver problems",
+        "Cardiovascular risks",
+        "Kidney problems"
+      ],
+      "contraindications": [
+        "Cardiovascular disease",
+        "GI bleeding history",
+        "Late pregnancy"
+      ]
+    },
+    {
+      "name": "Celecoxib",
+      "drug_class": "COX-2 Selective NSAID",
+      "brand_names": ["Celebrex"],
+      "composition": {
+        "active_ingredient": "Celecoxib",
+        "strength": ["50mg", "100mg", "200mg", "400mg"]
+      },
+      "uses": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Acute pain",
+        "Primary dysmenorrhea"
+      ],
+      "side_effects": [
+        "Cardiovascular events",
+        "Stomach problems",
+        "Headache",
+        "Hypertension"
+      ],
+      "contraindications": [
+        "Sulfa allergy",
+        "Heart problems",
+        "Bleeding disorders"
+      ]
+    },
+    {
+      "name": "Meloxicam",
+      "drug_class": "NSAID",
+      "brand_names": ["Mobic"],
+      "composition": {
+        "active_ingredient": "Meloxicam",
+        "strength": ["7.5mg", "15mg"]
+      },
+      "uses": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Juvenile rheumatoid arthritis"
+      ],
+      "side_effects": [
+        "GI disturbance",
+        "Dizziness",
+        "Elevated blood pressure",
+        "Edema"
+      ],
+      "contraindications": [
+        "GI bleeding",
+        "Late pregnancy",
+        "Heart surgery"
+      ]
+    },
+    {
+      "name": "Indomethacin",
+      "drug_class": "NSAID",
+      "brand_names": ["Indocin"],
+      "composition": {
+        "active_ingredient": "Indomethacin",
+        "strength": ["25mg", "50mg", "75mg"]
+      },
+      "uses": [
+        "Severe arthritis",
+        "Acute gout",
+        "Bursitis",
+        "Tendonitis"
+      ],
+      "side_effects": [
+        "Severe headache",
+        "GI bleeding",
+        "Depression",
+        "Dizziness"
+      ],
+      "contraindications": [
+        "Active ulcer",
+        "Heart failure",
+        "Pregnancy"
+      ]
+    },
+    {
+      "name": "Ketorolac",
+      "drug_class": "NSAID",
+      "brand_names": ["Toradol"],
+      "composition": {
+        "active_ingredient": "Ketorolac tromethamine",
+        "strength": ["10mg tablet", "30mg injection"]
+      },
+      "uses": [
+        "Short-term severe pain",
+        "Post-operative pain",
+        "Migraine"
+      ],
+      "side_effects": [
+        "GI bleeding",
+        "Kidney problems",
+        "Bruising",
+        "Headache"
+      ],
+      "contraindications": [
+        "Bleeding disorders",
+        "Advanced kidney disease",
+        "Labor/delivery"
+      ]
+    },
+    {
+      "name": "Piroxicam",
+      "drug_class": "NSAID",
+      "brand_names": ["Feldene"],
+      "composition": {
+        "active_ingredient": "Piroxicam",
+        "strength": ["10mg", "20mg"]
+      },
+      "uses": [
+        "Rheumatoid arthritis",
+        "Osteoarthritis",
+        "Ankylosing spondylitis"
+      ],
+      "side_effects": [
+        "GI ulceration",
+        "Dizziness",
+        "Skin reactions",
+        "Edema"
+      ],
+      "contraindications": [
+        "Peptic ulcer",
+        "Severe heart failure",
+        "Pregnancy"
+      ]
+    },
+    {
+      "name": "Etodolac",
+      "drug_class": "NSAID",
+      "brand_names": ["Lodine"],
+      "composition": {
+        "active_ingredient": "Etodolac",
+        "strength": ["200mg", "300mg", "400mg", "500mg"]
+      },
+      "uses": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Acute pain"
+      ],
+      "side_effects": [
+        "Stomach pain",
+        "Diarrhea",
+        "Dizziness",
+        "Headache"
+      ],
+      "contraindications": [
+        "Aspirin allergy",
+        "Heart surgery",
+        "Active bleeding"
+      ]
+    },
+    {
+      "name": "Nabumetone",
+      "drug_class": "NSAID",
+      "brand_names": ["Relafen"],
+      "composition": {
+        "active_ingredient": "Nabumetone",
+        "strength": ["500mg", "750mg"]
+      },
+      "uses": [
+        "Osteoarthritis",
+        "Rheumatoid arthritis",
+        "Chronic pain"
+      ],
+      "side_effects": [
+        "GI upset",
+        "Diarrhea",
+        "Dizziness",
+        "Rash"
+      ],
+      "contraindications": [
+        "Peptic ulcer",
+        "Severe heart failure",
+        "Late pregnancy"
+      ]
+    },
+    {
+      "name": "Baclofen",
+      "drug_class": "Muscle Relaxant/Antispastic",
+      "brand_names": ["Lioresal"],
+      "composition": {
+        "active_ingredient": "Baclofen",
+        "strength": ["5mg", "10mg", "20mg"]
+      },
+      "uses": [
+        "Muscle spasticity",
+        "Multiple sclerosis",
+        "Spinal cord injuries",
+        "Cerebral palsy"
+      ],
+      "side_effects": [
+        "Drowsiness",
+        "Weakness",
+        "Dizziness",
+        "Confusion",
+        "Nausea"
+      ],
+      "contraindications": [
+        "Hypersensitivity",
+        "Active peptic ulcer disease",
+        "Severe psychiatric disorders"
+      ]
+    },
+    {
+      "name": "Cyclobenzaprine",
+      "drug_class": "Muscle Relaxant",
+      "brand_names": ["Flexeril", "Amrix"],
+      "composition": {
+        "active_ingredient": "Cyclobenzaprine hydrochloride",
+        "strength": ["5mg", "7.5mg", "10mg", "15mg", "30mg"]
+      },
+      "uses": [
+        "Muscle spasms",
+        "Acute musculoskeletal pain",
+        "Back pain",
+        "Neck pain"
+      ],
+      "side_effects": [
+        "Drowsiness",
+        "Dry mouth",
+        "Dizziness",
+        "Fatigue",
+        "Constipation"
+      ],
+      "contraindications": [
+        "MAO inhibitor use",
+        "Heart rhythm disorders",
+        "Hyperthyroidism",
+        "Recent heart attack"
+      ]
+    },
+    {
+      "name": "Methocarbamol",
+      "drug_class": "Muscle Relaxant",
+      "brand_names": ["Robaxin"],
+      "composition": {
+        "active_ingredient": "Methocarbamol",
+        "strength": ["500mg", "750mg"]
+      },
+      "uses": [
+        "Muscle spasms",
+        "Musculoskeletal pain",
+        "Back pain"
+      ],
+      "side_effects": [
+        "Drowsiness",
+        "Dizziness",
+        "Headache",
+        "Blurred vision",
+        "Nausea"
+      ],
+      "contraindications": [
+        "Myasthenia gravis",
+        "Severe liver disease",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Tizanidine",
+      "drug_class": "Muscle Relaxant/Alpha-2 Agonist",
+      "brand_names": ["Zanaflex"],
+      "composition": {
+        "active_ingredient": "Tizanidine hydrochloride",
+        "strength": ["2mg", "4mg", "6mg"]
+      },
+      "uses": [
+        "Spasticity",
+        "Multiple sclerosis",
+        "Spinal cord injury",
+        "Chronic musculoskeletal pain"
+      ],
+      "side_effects": [
+        "Low blood pressure",
+        "Drowsiness",
+        "Dry mouth",
+        "Dizziness",
+        "Liver problems"
+      ],
+      "contraindications": [
+        "Use with Cipro or other CYP1A2 inhibitors",
+        "Severe liver disease"
+      ]
+    },
+    {
+      "name": "Carisoprodol",
+      "drug_class": "Muscle Relaxant",
+      "brand_names": ["Soma"],
+      "composition": {
+        "active_ingredient": "Carisoprodol",
+        "strength": ["250mg", "350mg"]
+      },
+      "uses": [
+        "Acute musculoskeletal pain",
+        "Back pain",
+        "Muscle spasms"
+      ],
+      "side_effects": [
+        "Drowsiness",
+        "Dizziness",
+        "Dependence risk",
+        "Headache",
+        "Nausea"
+      ],
+      "contraindications": [
+        "Acute porphyria",
+        "History of substance abuse",
+        "Pregnancy"
+      ]
+    },
+    {
+      "name": "Orphenadrine",
+      "drug_class": "Muscle Relaxant",
+      "brand_names": ["Norflex"],
+      "composition": {
+        "active_ingredient": "Orphenadrine citrate",
+        "strength": ["100mg"]
+      },
+      "uses": [
+        "Muscle spasms",
+        "Musculoskeletal pain",
+        "Injury-related spasms"
+      ],
+      "side_effects": [
+        "Dry mouth",
+        "Blurred vision",
+        "Urinary retention",
+        "Tachycardia",
+        "Confusion"
+      ],
+      "contraindications": [
+        "Glaucoma",
+        "Myasthenia gravis",
+        "Pyloric obstruction"
+      ]
+    },
+    {
+      "name": "Dantrolene",
+      "drug_class": "Direct-acting Muscle Relaxant",
+      "brand_names": ["Dantrium"],
+      "composition": {
+        "active_ingredient": "Dantrolene sodium",
+        "strength": ["25mg", "50mg", "100mg"]
+      },
+      "uses": [
+        "Spasticity",
+        "Cerebral palsy",
+        "Multiple sclerosis",
+        "Malignant hyperthermia"
+      ],
+      "side_effects": [
+        "Liver toxicity",
+        "Weakness",
+        "Drowsiness",
+        "Diarrhea",
+        "Fatigue"
+      ],
+      "contraindications": [
+        "Active liver disease",
+        "Need for acute muscle relaxation"
+      ]
+    },
+    {
+      "name": "Metaxalone",
+      "drug_class": "Muscle Relaxant",
+      "brand_names": ["Skelaxin"],
+      "composition": {
+        "active_ingredient": "Metaxalone",
+        "strength": ["800mg"]
+      },
+      "uses": [
+        "Acute musculoskeletal pain",
+        "Muscle spasms",
+        "Back pain"
+      ],
+      "side_effects": [
+        "Drowsiness",
+        "Dizziness",
+        "Headache",
+        "Nausea",
+        "Irritability"
+      ],
+      "contraindications": [
+        "Significant liver disease",
+        "Kidney disease",
+        "Anemia"
+      ]
+    },
+    {
+      "name": "Chlorzoxazone",
+      "drug_class": "Muscle Relaxant",
+      "brand_names": ["Lorzone", "Parafon Forte DSC"],
+      "composition": {
+        "active_ingredient": "Chlorzoxazone",
+        "strength": ["250mg", "500mg", "750mg"]
+      },
+      "uses": [
+        "Muscle spasms",
+        "Musculoskeletal pain",
+        "Back pain"
+      ],
+      "side_effects": [
+        "Dizziness",
+        "Drowsiness",
+        "Liver problems",
+        "Malaise",
+        "Nausea"
+      ],
+      "contraindications": [
+        "Liver disease",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Diazepam",
+      "drug_class": "Benzodiazepine/Muscle Relaxant",
+      "brand_names": ["Valium"],
+      "composition": {
+        "active_ingredient": "Diazepam",
+        "strength": ["2mg", "5mg", "10mg"]
+      },
+      "uses": [
+        "Muscle spasms",
+        "Anxiety",
+        "Seizures",
+        "Alcohol withdrawal"
+      ],
+      "side_effects": [
+        "Sedation",
+        "Dependence",
+        "Memory problems",
+        "Balance issues",
+        "Confusion"
+      ],
+      "contraindications": [
+        "Severe respiratory insufficiency",
+        "Sleep apnea",
+        "Myasthenia gravis",
+        "Acute narrow-angle glaucoma"
+      ]
+    },
+    {
+      "name": "Albuterol",
+      "drug_class": "Short-acting beta-agonist (SABA)",
+      "brand_names": ["Ventolin", "ProAir", "Proventil"],
+      "composition": {
+        "active_ingredient": "Albuterol sulfate",
+        "strength": ["90mcg/actuation"]
+      },
+      "uses": [
+        "Acute bronchospasm",
+        "Exercise-induced bronchospasm",
+        "COPD",
+        "Asthma attacks"
+      ],
+      "side_effects": [
+        "Tremors",
+        "Tachycardia",
+        "Anxiety",
+        "Headache",
+        "Throat irritation"
+      ],
+      "contraindications": [
+        "Hypersensitivity to albuterol",
+        "Severe cardiac conditions"
+      ]
+    },
+    {
+      "name": "Fluticasone",
+      "drug_class": "Inhaled Corticosteroid",
+      "brand_names": ["Flovent", "ArmonAir"],
+      "composition": {
+        "active_ingredient": "Fluticasone propionate",
+        "strength": ["44mcg", "110mcg", "220mcg"]
+      },
+      "uses": [
+        "Maintenance treatment of asthma",
+        "Prevention of asthma symptoms",
+        "Chronic obstructive pulmonary disease"
+      ],
+      "side_effects": [
+        "Oral thrush",
+        "Hoarseness",
+        "Upper respiratory infection",
+        "Headache",
+        "Throat irritation"
+      ],
+      "contraindications": [
+        "Primary treatment of status asthmaticus",
+        "Acute bronchospasm",
+        "Severe milk protein allergy"
+      ]
+    },
+    {
+      "name": "Salmeterol",
+      "drug_class": "Long-acting beta-agonist (LABA)",
+      "brand_names": ["Serevent"],
+      "composition": {
+        "active_ingredient": "Salmeterol xinafoate",
+        "strength": ["50mcg/dose"]
+      },
+      "uses": [
+        "Maintenance treatment of asthma",
+        "COPD",
+        "Prevention of exercise-induced bronchospasm"
+      ],
+      "side_effects": [
+        "Throat irritation",
+        "Upper respiratory tract infection",
+        "Headache",
+        "Muscle pain",
+        "Tachycardia"
+      ],
+      "contraindications": [
+        "Monotherapy for asthma",
+        "Acute asthma symptoms",
+        "Status asthmaticus",
+        "Severe hypersensitivity to milk proteins"
+      ]
+    },
+    {
+      "name": "Tiotropium",
+      "drug_class": "Long-acting anticholinergic",
+      "brand_names": ["Spiriva"],
+      "composition": {
+        "active_ingredient": "Tiotropium bromide monohydrate",
+        "strength": ["2.5mcg/actuation", "18mcg/capsule"]
+      },
+      "uses": [
+        "COPD maintenance",
+        "Reducing COPD exacerbations",
+        "Asthma maintenance treatment"
+      ],
+      "side_effects": [
+        "Dry mouth",
+        "Upper respiratory infection",
+        "Sinusitis",
+        "Pharyngitis",
+        "Urinary retention"
+      ],
+      "contraindications": [
+        "Hypersensitivity to tiotropium",
+        "Hypersensitivity to atropine derivatives",
+        "Narrow-angle glaucoma"
+      ]
+    },
+    {
+      "name": "Montelukast",
+      "drug_class": "Leukotriene receptor antagonist",
+      "brand_names": ["Singulair"],
+      "composition": {
+        "active_ingredient": "Montelukast sodium",
+        "strength": ["4mg", "5mg", "10mg"]
+      },
+      "uses": [
+        "Prophylaxis and chronic treatment of asthma",
+        "Allergic rhinitis",
+        "Exercise-induced bronchoconstriction"
+      ],
+      "side_effects": [
+        "Headache",
+        "Flu-like symptoms",
+        "Abdominal pain",
+        "Mental health changes",
+        "Sleep disturbances"
+      ],
+      "contraindications": [
+        "Acute asthma attacks",
+        "Status asthmaticus",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Fluoxetine",
+      "drug_class": "SSRI (Selective Serotonin Reuptake Inhibitor)",
+      "brand_names": ["Prozac", "Sarafem"],
+      "composition": {
+        "active_ingredient": "Fluoxetine hydrochloride",
+        "strength": ["10mg", "20mg", "40mg", "90mg"]
+      },
+      "uses": [
+        "Major depressive disorder",
+        "Obsessive-compulsive disorder",
+        "Bulimia nervosa",
+        "Panic disorder",
+        "Premenstrual dysphoric disorder"
+      ],
+      "side_effects": [
+        "Nausea",
+        "Sleep problems",
+        "Headache",
+        "Sexual dysfunction",
+        "Anxiety"
+      ],
+      "contraindications": [
+        "MAO inhibitors",
+        "Thioridazine",
+        "Pimozide",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Sertraline",
+      "drug_class": "SSRI",
+      "brand_names": ["Zoloft"],
+      "composition": {
+        "active_ingredient": "Sertraline hydrochloride",
+        "strength": ["25mg", "50mg", "100mg"]
+      },
+      "uses": [
+        "Major depressive disorder",
+        "Social anxiety disorder",
+        "PTSD",
+        "Panic disorder",
+        "OCD"
+      ],
+      "side_effects": [
+        "Nausea",
+        "Diarrhea",
+        "Sexual dysfunction",
+        "Insomnia",
+        "Dry mouth"
+      ],
+      "contraindications": [
+        "MAO inhibitors",
+        "Pimozide",
+        "Disulfiram (liquid form)",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Venlafaxine",
+      "drug_class": "SNRI (Serotonin-Norepinephrine Reuptake Inhibitor)",
+      "brand_names": ["Effexor"],
+      "composition": {
+        "active_ingredient": "Venlafaxine hydrochloride",
+        "strength": ["37.5mg", "75mg", "150mg"]
+      },
+      "uses": [
+        "Major depressive disorder",
+        "Generalized anxiety disorder",
+        "Social anxiety disorder",
+        "Panic disorder"
+      ],
+      "side_effects": [
+        "Hypertension",
+        "Nausea",
+        "Headache",
+        "Sweating",
+        "Sexual dysfunction"
+      ],
+      "contraindications": [
+        "MAO inhibitors",
+        "Uncontrolled hypertension",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Quetiapine",
+      "drug_class": "Atypical Antipsychotic",
+      "brand_names": ["Seroquel"],
+      "composition": {
+        "active_ingredient": "Quetiapine fumarate",
+        "strength": ["25mg", "50mg", "100mg", "200mg", "300mg", "400mg"]
+      },
+      "uses": [
+        "Schizophrenia",
+        "Bipolar disorder",
+        "Major depressive disorder",
+        "Acute manic episodes"
+      ],
+      "side_effects": [
+        "Weight gain",
+        "Sedation",
+        "Dry mouth",
+        "Diabetes risk",
+        "Dizziness"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Severe liver disease"
+      ]
+    },
+    {
+      "name": "Risperidone",
+      "drug_class": "Atypical Antipsychotic",
+      "brand_names": ["Risperdal"],
+      "composition": {
+        "active_ingredient": "Risperidone",
+        "strength": ["0.25mg", "0.5mg", "1mg", "2mg", "3mg", "4mg"]
+      },
+      "uses": [
+        "Schizophrenia",
+        "Bipolar mania",
+        "Autism-related irritability",
+        "Acute psychosis"
+      ],
+      "side_effects": [
+        "Weight gain",
+        "Prolactin elevation",
+        "Extrapyramidal symptoms",
+        "Sedation",
+        "Orthostatic hypotension"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Dementia-related psychosis"
+      ]
+    },
+    {
+      "name": "Lithium",
+      "drug_class": "Mood Stabilizer",
+      "brand_names": ["Lithobid", "Eskalith"],
+      "composition": {
+        "active_ingredient": "Lithium carbonate",
+        "strength": ["300mg", "450mg", "600mg"]
+      },
+      "uses": [
+        "Bipolar disorder",
+        "Acute mania",
+        "Maintenance treatment of bipolar disorder",
+        "Treatment-resistant depression"
+      ],
+      "side_effects": [
+        "Tremor",
+        "Thirst",
+        "Frequent urination",
+        "Weight gain",
+        "Thyroid problems"
+      ],
+      "contraindications": [
+        "Severe renal impairment",
+        "Severe cardiovascular disease",
+        "Dehydration",
+        "Sodium depletion"
+      ]
+    },
+    {
+      "name": "Bupropion",
+      "drug_class": "NDRI (Norepinephrine-Dopamine Reuptake Inhibitor)",
+      "brand_names": ["Wellbutrin", "Zyban"],
+      "composition": {
+        "active_ingredient": "Bupropion hydrochloride",
+        "strength": ["75mg", "100mg", "150mg", "300mg"]
+      },
+      "uses": [
+        "Major depressive disorder",
+        "Seasonal affective disorder",
+        "Smoking cessation",
+        "ADHD"
+      ],
+      "side_effects": [
+        "Insomnia",
+        "Headache",
+        "Dry mouth",
+        "Anxiety",
+        "Weight loss"
+      ],
+      "contraindications": [
+        "Seizure disorder",
+        "Eating disorders",
+        "MAO inhibitors",
+        "Abrupt discontinuation of alcohol"
+      ]
+    },
+    {
+      "name": "Clonazepam",
+      "drug_class": "Benzodiazepine",
+      "brand_names": ["Klonopin"],
+      "composition": {
+        "active_ingredient": "Clonazepam",
+        "strength": ["0.5mg", "1mg", "2mg"]
+      },
+      "uses": [
+        "Panic disorder",
+        "Anxiety disorders",
+        "Seizures",
+        "Acute mania"
+      ],
+      "side_effects": [
+        "Sedation",
+        "Cognitive impairment",
+        "Dependence risk",
+        "Balance problems",
+        "Memory issues"
+      ],
+      "contraindications": [
+        "Severe respiratory insufficiency",
+        "Sleep apnea",
+        "Acute narrow-angle glaucoma",
+        "Significant liver disease"
+      ]
+    },
+    {
+      "name": "Duloxetine",
+      "drug_class": "SNRI",
+      "brand_names": ["Cymbalta"],
+      "composition": {
+        "active_ingredient": "Duloxetine hydrochloride",
+        "strength": ["20mg", "30mg", "60mg"]
+      },
+      "uses": [
+        "Major depressive disorder",
+        "Generalized anxiety disorder",
+        "Diabetic peripheral neuropathy",
+        "Fibromyalgia",
+        "Chronic musculoskeletal pain"
+      ],
+      "side_effects": [
+        "Nausea",
+        "Dry mouth",
+        "Constipation",
+        "Decreased appetite",
+        "Excessive sweating"
+      ],
+      "contraindications": [
+        "MAO inhibitors",
+        "Uncontrolled narrow-angle glaucoma",
+        "Liver disease"
+      ]
+    },
+    {
+      "name": "Aripiprazole",
+      "drug_class": "Atypical Antipsychotic",
+      "brand_names": ["Abilify"],
+      "composition": {
+        "active_ingredient": "Aripiprazole",
+        "strength": ["2mg", "5mg", "10mg", "15mg", "20mg", "30mg"]
+      },
+      "uses": [
+        "Schizophrenia",
+        "Bipolar disorder",
+        "Major depressive disorder (adjunct)",
+        "Autism-related irritability"
+      ],
+      "side_effects": [
+        "Akathisia",
+        "Weight gain",
+        "Headache",
+        "Anxiety",
+        "Insomnia"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Dementia-related psychosis"
+      ]
+    },
+    {
+      "name": "Escitalopram",
+      "drug_class": "SSRI",
+      "brand_names": ["Lexapro"],
+      "composition": {
+        "active_ingredient": "Escitalopram oxalate",
+        "strength": ["5mg", "10mg", "20mg"]
+      },
+      "uses": [
+        "Major depressive disorder",
+        "Generalized anxiety disorder",
+        "Social anxiety disorder",
+        "Panic disorder"
+      ],
+      "side_effects": [
+        "Sexual dysfunction",
+        "Insomnia",
+        "Nausea",
+        "Dry mouth",
+        "Dizziness"
+      ],
+      "contraindications": [
+        "MAO inhibitors",
+        "Pimozide",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Olanzapine",
+      "drug_class": "Atypical Antipsychotic",
+      "brand_names": ["Zyprexa"],
+      "composition": {
+        "active_ingredient": "Olanzapine",
+        "strength": ["2.5mg", "5mg", "7.5mg", "10mg", "15mg", "20mg"]
+      },
+      "uses": [
+        "Schizophrenia",
+        "Bipolar disorder",
+        "Treatment-resistant depression",
+        "Acute agitation"
+      ],
+      "side_effects": [
+        "Significant weight gain",
+        "Metabolic changes",
+        "Sedation",
+        "Orthostatic hypotension",
+        "Diabetes risk"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Dementia-related psychosis"
+      ]
+    },
+    {
+      "name": "Lamotrigine",
+      "drug_class": "Anticonvulsant/Mood Stabilizer",
+      "brand_names": ["Lamictal"],
+      "composition": {
+        "active_ingredient": "Lamotrigine",
+        "strength": ["25mg", "50mg", "100mg", "200mg"]
+      },
+      "uses": [
+        "Bipolar disorder maintenance",
+        "Epilepsy",
+        "Major depressive disorder",
+        "Borderline personality disorder"
+      ],
+      "side_effects": [
+        "Rash",
+        "Headache",
+        "Dizziness",
+        "Double vision",
+        "Coordination problems"
+      ],
+      "contraindications": [
+        "Known hypersensitivity",
+        "Severe liver disease"
+      ]
+    },
+    {
+      "name": "Mirtazapine",
+      "drug_class": "Tetracyclic Antidepressant",
+      "brand_names": ["Remeron"],
+      "composition": {
+        "active_ingredient": "Mirtazapine",
+        "strength": ["7.5mg", "15mg", "30mg", "45mg"]
+      },
+      "uses": [
+        "Major depressive disorder",
+        "Anxiety disorders",
+        "Insomnia",
+        "Appetite stimulation"
+      ],
+      "side_effects": [
+        "Sedation",
+        "Weight gain",
+        "Dry mouth",
+        "Increased appetite",
+        "Dizziness"
+      ],
+      "contraindications": [
+        "MAO inhibitors",
+        "Known hypersensitivity"
+      ]
+    },
+    {
+      "name": "Ziprasidone",
+      "drug_class": "Atypical Antipsychotic",
+      "brand_names": ["Geodon"],
+      "composition": {
+        "active_ingredient": "Ziprasidone hydrochloride",
+        "strength": ["20mg", "40mg", "60mg", "80mg"]
+      },
+      "uses": [
+        "Schizophrenia",
+        "Bipolar mania",
+        "Acute agitation",
+        "Mixed episodes"
+      ],
+      "side_effects": [
+        "QT prolongation",
+        "Somnolence",
+        "Extrapyramidal symptoms",
+        "Dizziness",
+        "Respiratory tract infection"
+      ],
+      "contraindications": [
+        "QT prolongation",
+        "Recent MI",
+        "Uncompensated heart failure"
+      ]
+    },
+    {
+      "name": "Aspirin",
+      "uses": ["Pain relief", "Anti-inflammatory", "Blood thinner (prevents heart attacks and strokes)"],
+      "side_effects": ["Stomach irritation", "Bleeding", "Nausea", "Allergic reactions"]
+    },
+    {
+      "name": "Amoxicillin",
+      "uses": ["Treats bacterial infections (ear infections, throat infections, pneumonia)"],
+      "side_effects": ["Diarrhea", "Rash", "Allergic reactions", "Nausea"]
+    },
+    {
+      "name": "Metformin",
+      "uses": ["Treats type 2 diabetes (lowers blood sugar levels)"],
+      "side_effects": ["Stomach upset", "Diarrhea", "Lactic acidosis (rare but serious)"]
+    },
+    {
+      "name": "Lisinopril",
+      "uses": ["High blood pressure (hypertension)", "Heart failure", "Kidney problems"],
+      "side_effects": ["Dizziness", "Headache", "Dry cough", "Fatigue"]
+    },
+    {
+      "name": "Simvastatin",
+      "uses": ["Lowers cholesterol", "Prevents heart disease"],
+      "side_effects": ["Muscle pain", "Liver damage", "Stomach upset"]
+    },
+    {
+      "name": "Amlodipine",
+      "uses": ["High blood pressure", "Chest pain (angina)"],
+      "side_effects": ["Swelling", "Dizziness", "Headache", "Tiredness"]
+    },
+    {
+      "name": "Omeprazole",
+      "uses": ["Treats acid reflux", "Ulcers", "Heartburn (proton pump inhibitor)"],
+      "side_effects": ["Headache", "Nausea", "Diarrhea", "Vitamin B12 deficiency (long-term use)"]
+    },
+    {
+      "name": "Cetirizine",
+      "uses": ["Allergies", "Hay fever", "Seasonal rhinitis", "Itching"],
+      "side_effects": ["Drowsiness", "Dry mouth", "Headache"]
+    },
+    {
+      "name": "Diazepam",
+      "uses": ["Anxiety", "Muscle spasms", "Seizures", "Alcohol withdrawal"],
+      "side_effects": ["Drowsiness", "Dizziness", "Confusion", "Dependence with prolonged use"]
+    },
+    {
+      "name": "Losartan",
+      "uses": ["High blood pressure", "Heart failure", "Kidney protection in diabetes"],
+      "side_effects": ["Dizziness", "Headache", "Fatigue", "Back pain"]
+    },
+    {
+      "name": "Diphenhydramine",
+      "uses": ["Allergies", "Cold symptoms", "Insomnia", "Motion sickness"],
+      "side_effects": ["Drowsiness", "Dry mouth", "Dizziness", "Urinary retention"]
+    },
+    {
+      "name": "Prednisolone",
+      "uses": ["Inflammatory conditions (arthritis, allergies, asthma)"],
+      "side_effects": ["Weight gain", "Increased blood sugar", "Mood changes", "Osteoporosis"]
+    },
+    {
+      "name": "Hydrochlorothiazide",
+      "uses": ["Diuretic (treats high blood pressure, fluid retention)"],
+      "side_effects": ["Dizziness", "Dehydration", "Electrolyte imbalance", "Low potassium"]
+    },
+    {
+      "name": "Atorvastatin",
+      "uses": ["Lowers cholesterol", "Prevents heart disease"],
+      "side_effects": ["Muscle pain", "Liver issues", "Digestive problems"]
+    },
+    {
+      "name": "Furosemide",
+      "uses": ["Diuretic (fluid retention, heart failure, kidney problems)"],
+      "side_effects": ["Dehydration", "Electrolyte imbalances", "Dizziness"]
+    },
+    {
+      "name": "Fluoxetine",
+      "uses": ["Antidepressant (SSRIs)", "Treats depression", "Anxiety", "OCD"],
+      "side_effects": ["Nausea", "Insomnia", "Sexual dysfunction", "Anxiety"]
+    },
+    {
+      "name": "Salbutamol",
+      "uses": ["Asthma", "COPD (bronchodilator)"],
+      "side_effects": ["Tremors", "Nervousness", "Rapid heartbeat"]
+    },
+    {
+      "name": "Ranitidine",
+      "uses": ["Treats acid reflux", "Ulcers (H2 blocker)"],
+      "side_effects": ["Headache", "Dizziness", "Constipation", "Stomach pain"]
+    },
+    {
+      "name": "Levothyroxine",
+      "uses": ["Hypothyroidism (low thyroid function)"],
+      "side_effects": ["Weight loss", "Anxiety", "Rapid heartbeat", "Insomnia"]
+    },
+    {
+      "name": "Tamsulosin",
+      "uses": ["Enlarged prostate (BPH)", "Urinary symptoms"],
+      "side_effects": ["Dizziness", "Headache", "Abnormal ejaculation"]
+    },
+    {
+      "name": "Clindamycin",
+      "uses": ["Bacterial infections (skin, respiratory tract, blood)"],
+      "side_effects": ["Diarrhea", "Nausea", "Abdominal pain"]
+    },
+    {
+      "name": "Ciprofloxacin",
+      "uses": ["Treats bacterial infections (urinary tract, respiratory, and more)"],
+      "side_effects": ["Nausea", "Diarrhea", "Dizziness", "Rash"]
+    }
+  ]
+}
