@@ -10,3 +10,4 @@ pyttsx3
 google-cloud-vision
 rank-bm25
 faiss-cpu
+gunicorn
