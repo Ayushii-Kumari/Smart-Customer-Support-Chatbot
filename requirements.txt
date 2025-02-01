@@ -1,14 +1,13 @@
-Flask
+flask
 gunicorn
 transformers
+torch  # Required for GPT-2 model
 google-generativeai
 langchain
-langchain-community
+langchain-community  # Fixes FAISS error
 langchain-google-genai
-PyPDF2
+pypdf2
 speechrecognition
-gtts
-pydub
-pyttsx3
+gtts  # Replacing pyttsx3
 google-cloud-vision
 rank-bm25
