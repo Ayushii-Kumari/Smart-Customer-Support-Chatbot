@@ -1,7 +1,8 @@
 flask
 gunicorn
 transformers
-torch  # Required for GPT-2 model
+torch 
+tensorflow
 google-generativeai
 langchain
 langchain-community  # Fixes FAISS error
