@@ -32,17 +32,6 @@ def initialize_gemini_chat():
     except Exception:
         return None
 
-def initialize_models():
-    try:
-        gpt2_model = GPT2LMHeadModel.from_pretrained("gpt2")
-        gpt2_tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
-        if gpt2_tokenizer.pad_token is None:
-            gpt2_tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-            gpt2_model.resize_token_embeddings(len(gpt2_tokenizer))
-        return gpt2_model, gpt2_tokenizer
-    except Exception:
-        return None, None
-
 def get_pdf_text(pdf_file):
     text = ""
     try:
