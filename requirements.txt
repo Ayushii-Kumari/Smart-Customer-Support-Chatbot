@@ -2,7 +2,6 @@ flask
 gunicorn
 transformers
 torch 
-tensorflow-cpu
 google-generativeai
 langchain
 langchain-community  # Fixes FAISS error
