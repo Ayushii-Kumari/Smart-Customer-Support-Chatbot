@@ -1,12 +1,10 @@
 Flask
 gunicorn
 transformers
-torch  # Required for GPT-2 (PyTorch backend)
 google-generativeai
 langchain
-langchain-community  # New package required for FAISS
+langchain-community
 langchain-google-genai
-faiss-cpu
 PyPDF2
 speechrecognition
 pyttsx3
