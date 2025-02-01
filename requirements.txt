@@ -7,6 +7,8 @@ langchain-community
 langchain-google-genai
 PyPDF2
 speechrecognition
+gtts
+pydub
 pyttsx3
 google-cloud-vision
 rank-bm25
