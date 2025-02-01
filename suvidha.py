@@ -8,13 +8,14 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
-from langchain.vectorstores import FAISS
 from PyPDF2 import PdfReader
 import speech_recognition as sr
 import pyttsx3
 from google.cloud import vision
 from rank_bm25 import BM25Okapi
 from langchain.docstore.document import Document
+from langchain_community.vectorstores import FAISS
+
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
