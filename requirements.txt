@@ -11,4 +11,4 @@ speechrecognition
 gtts  # Replacing pyttsx3
 google-cloud-vision
 rank-bm25
-pyttsx3
+
