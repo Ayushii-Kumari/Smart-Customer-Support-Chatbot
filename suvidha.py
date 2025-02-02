@@ -11,7 +11,7 @@ from langchain.prompts import PromptTemplate
 from langchain.vectorstores import FAISS
 from PyPDF2 import PdfReader
 import speech_recognition as sr
-from gtts import gTTS  # Replace pyttsx3 with gTTS
+from gtts import gTTS  # Import gTTS
 from google.cloud import vision
 from rank_bm25 import BM25Okapi
 from langchain.docstore.document import Document
@@ -22,18 +22,13 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 recognizer = sr.Recognizer()
 
-# Function to replace pyttsx3 with gTTS
-def speak_text_gtts(text):
+# Function to convert text to speech using gTTS
+def speak_text(text):
     try:
-        # Use gTTS to convert text to speech
-        tts = gTTS(text=text, lang='en')
-        
-        # Save the audio to a temporary file
-        temp_file = os.path.join(app.config['UPLOAD_FOLDER'], "temp_audio.mp3")
+        tts = gTTS(text=text, lang='en')  # gTTS converts text to speech
+        temp_file = os.path.join(app.config['UPLOAD_FOLDER'], 'output.mp3')  # Save as an mp3 file
         tts.save(temp_file)
-        
-        # Return the file path so it can be served or played
-        return temp_file
+        return temp_file  # Return the path of the mp3 file
     except Exception as e:
         return f"Error in speech synthesis: {str(e)}"
 
@@ -80,7 +75,7 @@ def get_conversational_chain():
     prompt_template = """
     Answer the question as detailed as possible from the provided context. If the answer is not in
     the context, just say, "I don't have enough information to answer that question." Please don't provide incorrect information.
-    
+
     Context:\n {context}?\n
     Question: \n{question}\n
     Answer:
@@ -140,7 +135,10 @@ def chat():
         response = process_document_query(user_input)
     else:
         response = chat_instance.send_message(user_input, stream=False).text.strip() if chat_instance else "I'm having trouble connecting to my knowledge base. Please try again later."
-    return jsonify({"response": response})
+    
+    # Generate speech from response and return the path to the audio file
+    audio_file_path = speak_text(response)
+    return jsonify({"response": response, "audio_file": audio_file_path})
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Use the PORT from Render, default to 5000
