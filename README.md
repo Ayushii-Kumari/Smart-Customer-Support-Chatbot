@@ -1,7 +1,7 @@
 This is our Rag Narok project loacaly deployed on Flask and globaly deployed on Render. 
 
 
-**Please check out the url** :- 
+**Please check out the url** :- https://ragnarok-hexw.onrender.com
 
 
 
