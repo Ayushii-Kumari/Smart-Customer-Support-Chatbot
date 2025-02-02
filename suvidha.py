@@ -1,6 +1,6 @@
-import os
+import os 
 import re
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_file
 from werkzeug.utils import secure_filename
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import google.generativeai as genai
@@ -11,7 +11,8 @@ from langchain.prompts import PromptTemplate
 from langchain_community.vectorstores import FAISS
 from PyPDF2 import PdfReader
 import speech_recognition as sr
-from gtts import gTTS  # Import gTTS instead of pyttsx3
+from gtts import gTTS
+import tempfile
 from google.cloud import vision
 
 app = Flask(__name__)
@@ -44,23 +45,23 @@ def upload_image():
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     
     try:
-        # Save the image
+        # Save the image.
         image.save(file_path)
         print(f"Image saved at: {file_path}")
         
-        # Extract text from the image using OCR
+        # Extract text from the image using OCR.
         extracted_text = detect_text_in_image(file_path)
         print(f"Extracted text: {extracted_text}")
         
         if extracted_text.strip():
-            # Process extracted text and store it in FAISS index
+            # Split the extracted text into manageable chunks.
             text_chunks = get_text_chunks(extracted_text)
-            get_vector_store(text_chunks)  # Save the chunks in the vector store
-            
+            # Store image text chunks in a separate FAISS index.
+            get_vector_store_image(text_chunks)
             message = "Image uploaded, text extracted, and processed successfully!"
             
-            # Handle a query about the extracted image text (optional)
-            query_response = process_document_query(extracted_text)  # Optional query processing
+            # Optionally, process a sample image query:
+            query_response = process_image_query(extracted_text)  # You could change this to a specific query.
         else:
             message = "Image uploaded, but no text was detected."
             query_response = ""
@@ -74,6 +75,11 @@ def upload_image():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+def get_vector_store_image(text_chunks):
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
+    vector_store.save_local("faiss_index_image")
+
 # Setup file upload directory
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -83,6 +89,20 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Initialize speech components
 recognizer = sr.Recognizer()
+
+def speak_text(text):
+    try:
+        # Use gTTS to convert text to speech
+        tts = gTTS(text=text, lang='en')
+        
+        # Save the audio to a temporary file
+        temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".mp3")
+        tts.save(temp_file.name)
+        
+        # Return the file path so it can be served or played
+        return temp_file.name
+    except Exception as e:
+        return f"Error in speech synthesis: {str(e)}"
 
 def initialize_gemini_chat():
     try:
@@ -150,12 +170,30 @@ def process_document_query(user_question):
     except Exception as e:
         return f"I encountered an error while processing your document query: {str(e)}"
 
+def process_image_query(user_question):
+    """
+    Loads the FAISS index for image-derived text and processes a query using the conversational chain.
+    """
+    try:
+        embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+        # Load the separate FAISS index for images.
+        vector_store = FAISS.load_local("faiss_index_image", embeddings, allow_dangerous_deserialization=True)
+        # Retrieve relevant text chunks based on the user query.
+        images = vector_store.similarity_search(user_question)
+        # Set up the conversational chain using your custom prompt.
+        chain = get_conversational_chain()
+        response = chain({"input_documents": images, "question": user_question}, return_only_outputs=True)
+        return response["output_text"]
+    except Exception as e:
+        return f"I encountered an error while processing your image query: {str(e)}"
+
 def classify_intent(user_input):
-    doc_keywords = r"document|pdf|file|text|read|extract|analyze"
+    doc_keywords = r"explain|describe|document|pdf|file|text|read|extract|analyze"
+    image_keywords = r"image|picture|photo|explain|describe|text|read|extract|analyze"
     if re.search(doc_keywords, user_input, re.IGNORECASE):
         return "document"
-    
-    return "general"
+    elif re.search(image_keywords, user_input, re.IGNORECASE):
+        return "image"
 
 @app.route('/upload_document', methods=['POST'])
 def upload_document():
@@ -203,30 +241,3 @@ def chat():
    intent = classify_intent(user_input)
    chat_instance = initialize_gemini_chat()
    
-   if intent == "document":
-       response = process_document_query(user_input)
-   else:
-       if chat_instance:
-           response = chat_instance.send_message(user_input, stream=False)
-           response = response.text.strip()
-       else:
-           response = "I'm having trouble connecting to my knowledge base. Please try again in a moment."
-   
-   return jsonify({"response": response})
-
-@app.route('/speak', methods=['POST'])
-def speak():
-    text = request.form.get('text')
-    if text:
-        tts = gTTS(text=text, lang='en')
-        tts.save("speech.mp3")
-        return jsonify({"message": "Text to speech conversion successful!"}), 200
-    else:
-        return jsonify({"error": "No text provided for speech."}), 400
-
-@app.route('/')
-def index():
-    return render_template('chat.html')
-
-if __name__ == "__main__":
-   app.run(debug=True)
