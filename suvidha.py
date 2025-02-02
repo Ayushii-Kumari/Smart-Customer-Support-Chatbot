@@ -1,6 +1,6 @@
-import os 
+import os
 import re
-from flask import Flask, render_template, request, jsonify, send_file
+from flask import Flask, render_template, request, jsonify
 from werkzeug.utils import secure_filename
 from transformers import GPT2LMHeadModel, GPT2Tokenizer
 import google.generativeai as genai
@@ -11,8 +11,7 @@ from langchain.prompts import PromptTemplate
 from langchain_community.vectorstores import FAISS
 from PyPDF2 import PdfReader
 import speech_recognition as sr
-from gtts import gTTS
-import tempfile
+import pyttsx3
 from google.cloud import vision
 
 app = Flask(__name__)
@@ -89,20 +88,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Initialize speech components
 recognizer = sr.Recognizer()
-
-def speak_text(text):
-    try:
-        # Use gTTS to convert text to speech
-        tts = gTTS(text=text, lang='en')
-        
-        # Save the audio to a temporary file
-        temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=".mp3")
-        tts.save(temp_file.name)
-        
-        # Return the file path so it can be served or played
-        return temp_file.name
-    except Exception as e:
-        return f"Error in speech synthesis: {str(e)}"
+engine = pyttsx3.init()
 
 def initialize_gemini_chat():
     try:
@@ -241,3 +227,22 @@ def chat():
    intent = classify_intent(user_input)
    chat_instance = initialize_gemini_chat()
    
+   if intent == "document":
+       response = process_document_query(user_input)
+   elif intent == "image":
+       response = upload_image()
+   else:
+       if chat_instance:
+           response = chat_instance.send_message(user_input, stream=False)
+           response = response.text.strip()
+       else:
+           response = "I'm having trouble connecting to my knowledge base. Please try again in a moment."
+   
+   return jsonify({"response": response})
+
+@app.route('/')
+def index():
+    return render_template('chat.html')
+
+if __name__ == "__main__":
+   app.run(debug=True)
