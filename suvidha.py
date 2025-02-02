@@ -44,23 +44,23 @@ def upload_image():
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     
     try:
-        # Save the image.
+        # Save the image
         image.save(file_path)
         print(f"Image saved at: {file_path}")
         
-        # Extract text from the image using OCR.
+        # Extract text from the image using OCR
         extracted_text = detect_text_in_image(file_path)
         print(f"Extracted text: {extracted_text}")
         
         if extracted_text.strip():
-            # Split the extracted text into manageable chunks.
+            # Process extracted text and store it in FAISS index
             text_chunks = get_text_chunks(extracted_text)
-            # Store image text chunks in a separate FAISS index.
-            get_vector_store_image(text_chunks)
+            get_vector_store(text_chunks)  # Save the chunks in the vector store
+            
             message = "Image uploaded, text extracted, and processed successfully!"
             
-            # Optionally, process a sample image query:
-            query_response = process_image_query(extracted_text)  # You could change this to a specific query.
+            # Handle a query about the extracted image text (optional)
+            query_response = process_document_query(extracted_text)  # Optional query processing
         else:
             message = "Image uploaded, but no text was detected."
             query_response = ""
@@ -73,11 +73,6 @@ def upload_image():
     
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-def get_vector_store_image(text_chunks):
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-    vector_store = FAISS.from_texts(text_chunks, embedding=embeddings)
-    vector_store.save_local("faiss_index_image")
 
 # Setup file upload directory
 UPLOAD_FOLDER = 'uploads'
@@ -156,30 +151,12 @@ def process_document_query(user_question):
     except Exception as e:
         return f"I encountered an error while processing your document query: {str(e)}"
 
-def process_image_query(user_question):
-    """
-    Loads the FAISS index for image-derived text and processes a query using the conversational chain.
-    """
-    try:
-        embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
-        # Load the separate FAISS index for images.
-        vector_store = FAISS.load_local("faiss_index_image", embeddings, allow_dangerous_deserialization=True)
-        # Retrieve relevant text chunks based on the user query.
-        images = vector_store.similarity_search(user_question)
-        # Set up the conversational chain using your custom prompt.
-        chain = get_conversational_chain()
-        response = chain({"input_documents": images, "question": user_question}, return_only_outputs=True)
-        return response["output_text"]
-    except Exception as e:
-        return f"I encountered an error while processing your image query: {str(e)}"
-
 def classify_intent(user_input):
-    doc_keywords = r"explain|describe|document|pdf|file|text|read|extract|analyze"
-    image_keywords = r"image|picture|photo|explain|describe|text|read|extract|analyze"
+    doc_keywords = r"document|pdf|file|text|read|extract|analyze"
     if re.search(doc_keywords, user_input, re.IGNORECASE):
         return "document"
-    elif re.search(image_keywords, user_input, re.IGNORECASE):
-        return "image"
+    
+    return "general"
 
 @app.route('/upload_document', methods=['POST'])
 def upload_document():
@@ -229,8 +206,6 @@ def chat():
    
    if intent == "document":
        response = process_document_query(user_input)
-   elif intent == "image":
-       response = upload_image()
    else:
        if chat_instance:
            response = chat_instance.send_message(user_input, stream=False)
